@@ -1,0 +1,36 @@
+extends layout
+
+block content
+	h3= title
+	form#form_add_user(name="adduser", method="post", action="/adduser")
+		span Name
+		span &nbsp;
+		input#input_name(type="text", placeholder="name", name="name")
+		br
+		br
+		span Street
+		span &nbsp;
+		input#input_name(type="text", placeholder="street", name="street")
+		br
+		br
+		span City
+		span &nbsp;
+		input#input_name(type="text", placeholder="city", name="city")
+		br
+		br
+		span Password
+		span &nbsp;
+		input#input_name(type="password", placeholder="password", name="password")
+		br
+		br
+		span Email
+		span &nbsp;
+		input#input_name(type="text", placeholder="email", name="email")
+		br
+		br
+		span Years
+		span &nbsp;
+		input#input_name(type="text", placeholder="years", name="years")
+		br
+		br
+		button#submit_user(type="submit") submit

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h3.
+		Users
+	ul
+		each user, i in userList
+			li#user_list_item
+				a(href="#") #{user.name},  lives at 
+				#{user.street},  #{user.city}, #{user.email}, #{user.years}
